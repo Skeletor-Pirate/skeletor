@@ -1,0 +1,39 @@
+{
+  "gatewayUrl": "http://localhost:3001",
+  "apiKey": "",
+  "model": "auto",
+  "workspace": ".",
+  "skillsDirs": [
+    "./.agents/skills",
+    "./.opencode/skills",
+    "./.claude/skills",
+    "../.agents/skills",
+    "~/.agents/skills",
+    "~/.opencode/skills",
+    "~/.claude/skills",
+    "~/.gemini/config/skills"
+  ],
+  "mcpServers": {
+    "freellmapi": {
+      "url": "http://localhost:3001/mcp",
+      "transport": "http"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git"]
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    }
+  },
+  "agents": {}
+}

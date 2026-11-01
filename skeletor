@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -f "$DIR/dist/index.js" ]; then
+  exec node "$DIR/dist/index.js" "$@"
+else
+  exec npx --yes tsx "$DIR/src/index.ts" "$@"
+fi

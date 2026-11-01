@@ -1,0 +1,56 @@
+{
+  "name": "skeletor-cli",
+  "version": "2.0.0",
+  "description": "Apex autonomous CLI coding agent combining Claude Code modes, Aider 4-tier fuzzy patching, Hermes 2.0 self-evolution, AST code graphs, uncapped continuous autonomous coding, and zero-token local gateway integration.",
+  "license": "MIT",
+  "type": "module",
+  "author": "Skeletor Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skeletor-Pirate/skeletor.git"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "coding-agent",
+    "claude-code",
+    "aider",
+    "hermes",
+    "mcp",
+    "autonomous-agent",
+    "freellmapi",
+    "continuous-coding"
+  ],
+  "bin": {
+    "skeletor": "dist/index.js",
+    "skel": "dist/index.js",
+    "ah": "dist/index.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "npx vitest run"
+  },
+  "engines": {
+    "node": ">=20.18.0"
+  },
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "jsonc-parser": "^3.3.1",
+    "uuid": "^14.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "tsx": "^4.19.0",
+    "typescript": "~6.0.2",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+export declare function expandHome(p: string): string;
+export declare function readText(p: string): string | null;
+export declare function writeText(p: string, content: string): void;
+export declare function listDir(p: string): string[];
+export declare function isDirectory(p: string): boolean;
+export declare function findUp(start: string, filename: string): string | null;
+export declare function getErrorMessage(error: unknown): string;
+export declare const c: {
+    reset: string;
+    bold: string;
+    dim: string;
+    italic: string;
+    underline: string;
+    black: string;
+    red: string;
+    green: string;
+    yellow: string;
+    blue: string;
+    magenta: string;
+    cyan: string;
+    white: string;
+    gray: string;
+    bgBlue: string;
+    bgMagenta: string;
+};

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Agent Hub launcher — runs the compiled CLI if present, else tsx.
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -f "$DIR/dist/index.js" ]; then
+  exec node "$DIR/dist/index.js" "$@"
+else
+  exec npx --yes tsx "$DIR/src/index.ts" "$@"
+fi
