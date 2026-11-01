@@ -23,28 +23,6 @@ Skeletor is an open-source, local-first autonomous CLI coding agent engineered f
 
 ---
 
-## Global Benchmark Results
-
-Skeletor is evaluated across industry-standard benchmarks (HumanEval, SWE-bench, Aider Diff Benchmark, and Hermes Multi-Step Reasoning):
-
-| Capability / Benchmark | Skeletor | Claude Code | OpenAI Codex | Aider | Hermes 2.0 |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **HumanEval (pass@1)** | **100%** | 92.4% | 90.2% | 88.0% | 86.5% |
-| **Aider 4-Tier Fuzzy Edit** | **100%** | 81.0% | 76.5% | 96.0% | 72.0% |
-| **SWE-bench Multi-File Fix** | **100%** | 84.2% | 80.5% | 78.4% | 75.0% |
-| **Hermes Complex Reasoning** | **100%** | 89.0% | 85.0% | 74.0% | 91.5% |
-| **Uncapped Continuous Coding** | **Yes (Infinity)** | No (Capped) | No (Capped) | Partial | Partial |
-| **Self-Evolution & Skill Learning**| **Yes (`/evolve`)** | No | No | No | Yes |
-| **AST Code Graph (Context7x)** | **Built-in** | No | No | RepoMap only | No |
-| **Gateway Flexibility** | **FreeLLMAPI / OpenAI / vLLM** | Anthropic Only | OpenAI Only | Bring Your Key | Open Source |
-
-Run the live benchmark suite directly inside your terminal:
-```bash
-skeletor --benchmark
-```
-
----
-
 ## Installation & Setup
 
 ### Prerequisites
